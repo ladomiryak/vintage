@@ -1,2 +1,1 @@
-# smacss
-My default smacss tools
+# Animation test
