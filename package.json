@@ -1,0 +1,39 @@
+{
+  "name": "SMACSS",
+  "version": "1.0.0",
+  "description": "CSS Template for new project",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ladomiryak/smacss"
+  },
+  "author": "Valera Ladomyriak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ladomiryak/smacss/issues"
+  },
+  "scripts": {
+    "start": "webpack"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.0",
+    "fullpage.js": "^2.9.4",
+    "gsap": "^1.20.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.5",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.2.0",
+    "path": "^0.12.7",
+    "split-html-to-chars": "^1.0.5",
+    "webpack": "^3.6.0"
+  }
+}
