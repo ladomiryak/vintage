@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: $base-bg;
+  color: $base-text;
+  overflow: hidden;
+  background-color: #FFC255;
+}
+
+a {
+  color: $base-link;
+  text-decoration: none;
+
+  &:hover, &:focus, &:active {
+    outline: 0;
+  }
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+// Typography style
+html {
+  -ms-overflow-style: scrollbar;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+body {
+  font-family: $base-font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+
+// disable placeholder - onfocus/onblur effect
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='password'],
+input[type='search'],
+textarea {
+  &:focus {
+    &::-webkit-input-placeholder {color: transparent !important;}
+    &::-moz-placeholder          {color: transparent !important;;}
+    &:-moz-placeholder           {color: transparent !important;;}
+    &:-ms-input-placeholder      {color: transparent !important;;}
+  }
+}

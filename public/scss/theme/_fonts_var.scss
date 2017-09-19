@@ -1,0 +1,42 @@
+// General variables ----
+$base-font-size: 16;
+$default-fonts   : "Helvetica", Arial, sans-serif;
+$base-font-name  : 'Gotham';
+// ----------------------
+
+// Fonts path -----------
+$font-path: '../fonts/';
+$base-font-path  : 'gotham/';
+// ----------------------
+
+// Fonts file count -----
+$base-font-count  : 2;
+// ----------------------
+
+// Fonts files ----------
+$base-font-file  : (
+        1: 'GothamPro-Light',
+        2: 'GothamPro-Black'
+);
+// ----------------------
+
+// Fonts local name -----
+$base-font-local-1  : (
+        1: 'GothamPro-Light',
+        2: 'GothamPro-Black'
+);
+
+
+// ----------------------
+
+// Fonts weight ---------
+$base-font-weight  : (
+    1: 300,
+    2: 900
+);
+
+
+// Fonts family variables
+$base-font-family  : $base-font-name, $default-fonts !default;
+
+

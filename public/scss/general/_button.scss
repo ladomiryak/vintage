@@ -1,0 +1,41 @@
+button {
+  &.close {
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    border: 0;
+  }
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 45px;
+  background-color: transparent;
+  border: none {
+    width: 2px;
+    style: solid;
+    radius: 50px;
+  }
+  text: {
+    align: center;
+    decoration: none;
+    transform: uppercase;
+  }
+  font-family: $base-font-family;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 50px;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none 0;
+  vertical-align: middle;
+  transition: all 350ms ease-in-out 0s;
+  @extend %no-select;
+
+  &:hover {
+    background-color: $black;
+    color: #FFC255;
+  }
+}

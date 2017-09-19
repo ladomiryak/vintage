@@ -1,0 +1,81 @@
+.social {
+
+  &_item {
+    list-style: none;
+
+    &:not(:last-child){
+    }
+
+    a {
+      display: block;
+      width: 28px;
+      height: 28px;
+      margin: 0 auto;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: #464649;
+      border-radius: 50%;
+      background-size: 10px;
+    }
+  }
+
+  @include media-breakpoint-up(md){
+    text-align: right;
+
+    &_item {
+      margin: 0;
+
+      a {
+        background-size: auto;
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+}
+
+// login social btns
+
+.social_login {
+
+
+  &_item {
+
+    a {
+      display: block;
+      color: $white;
+      padding: 0 20px 0 40px;
+      border-radius: 2px;
+      background-position: 15px center;
+      background-repeat: no-repeat;
+    }
+
+  }
+
+
+}
+
+
+$socials : fb, tw, g;
+$socials-colors : #3B5998, #00ACED, #DD4B39;
+
+
+@each $social in $socials {
+  $i: index($socials, $social);
+  .social_login_item .#{$social} {
+    background-color: nth($socials-colors, $i);
+    background-image: url("../img/"+ $social +"-icon.png");
+
+  }
+}
+
+
+$footer-socials : fb, tw, g, ld, vk;
+
+
+@each $social in $footer-socials {
+  $i: index($footer-socials, $social);
+  .social_item .#{$social} {
+    background-image: url("../img/"+ $social +"-icon.png");
+  }
+}
