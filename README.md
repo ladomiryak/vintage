@@ -6,5 +6,6 @@
 to run webpack
 
 npm i
+
 npm run start
 
